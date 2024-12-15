@@ -1,0 +1,59 @@
+*{
+  font-family: Epilogue;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  background-color: var(--background-color);
+  /* define z-index values */
+  --bring-front: 1;
+  --bring-middle: 0;
+  --bring-back: -1;
+  --bring-far-back: -2;
+}
+
+h1 {
+  font-size: 2.5em;
+  /* scale of 1-1000 with 400 being normal and 700 being bold */
+  font-weight: 250;
+}
+
+/* :root { */
+
+[data-theme="light"] {
+  /* define colors and we will be able to change them using dark and light mode later */
+  /* video @ 3 mins */
+  --background-color: #FFFFFF; 
+  --primary-text-color: #212121;
+  --secondary-text-color: #616161;
+  --accent-color: #6200EE;
+  --link-color: #018786;
+  --section-bg-color: #F5F5F5;
+  --section-divider-color: #282828;
+  --toggle-bg-color: #6200EE;
+  /* make same color as opposite theme bg color to hide when toggled */
+  --toggle-text-color: #121212;
+  --toggle-border-color: #6200EE;
+  /* scroll-bar color */
+  --scrollbar-color: #018786;
+  --opposite: #E0E0E0;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212; 
+  --primary-text-color: #E0E0E0;
+  --secondary-text-color: #B0BEC5;
+  --accent-color: #BB86FC;
+  --link-color: #03DAC6;
+  --section-bg-color: #1E1E1E;
+  --section-divider-color: #E0E0E0;
+  --toggle-bg-color: #BB86FC;
+  /* make same color as opposite theme bg color to hide when toggled */
+  --toggle-text-color: #FFFFFF;
+  --toggle-border-color: #BB86FC;
+  --scrollbar-color: #03DAC6;
+  --opposite: #212121;
+}
+

@@ -1,0 +1,49 @@
+.project-page-content {
+    position: relative;
+    /* z-index */
+}
+.project-page-content h1{
+    font-size: 32px;
+}
+.project-list-items ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+    max-width: 300px;
+}
+
+.project-list-items li{
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 30px;
+    border: thick solid white;
+    border-radius: 15px;
+    padding: 5em;
+    /* needed for hovering */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    background-color: var(--accent-color);
+}
+
+.project-list-items li:hover{
+    transform: scale(1.5); /* Scales up the item on hover */
+    box-shadow: 0 4px 10px var(--link-color); /* Adds a subtle shadow */
+    /* background-color: #e0e0e0; Optional: Changes background on hover */
+}
+
+.project-list-items img{
+    display: flex;
+    flex: 1;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+}
+/* rgba(105, 110, 255, 1) */

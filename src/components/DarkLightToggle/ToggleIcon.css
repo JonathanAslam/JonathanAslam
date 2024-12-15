@@ -1,0 +1,17 @@
+.icon-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 6px;
+    border: 2px solid var(--toggle-border-color);
+    background-color: var(--toggle-border-color);
+}
+
+
+@media screen and (max-height: 700px) {
+    .icon-border {
+        padding: 4px;
+    }
+    
+}

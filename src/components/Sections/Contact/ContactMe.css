@@ -1,0 +1,44 @@
+.contact-page-content {
+    display: flex;
+    position: relative;
+    padding: 1vw;
+    flex-direction: column;
+}
+
+.contact-page-content h1 {
+    font-size: 32px;
+}
+
+.contact-page-content form {
+    background-color: #323130;
+    padding: 35px;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+.contact-page-content form input {
+    border-radius: 5px;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+.contact-page-content form textarea {
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+#fname, #lname {
+    width: 200px;
+}
+
+#email, #website-link, #message {
+    width: 408px;
+}
+/* how we position the labels ontop of the textbox */
+.fname , .lname {
+    float:left;
+}
+
+.tos-privacy a{
+    color: #696EFF;
+}

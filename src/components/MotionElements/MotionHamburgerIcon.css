@@ -1,0 +1,41 @@
+#hamburger-icon {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 9999px;
+    border: none;
+    background: rgb(255 255 255 / 0);
+    transition: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    /* z-index of a higher value brings this element forward */
+}
+
+#hamburger-icon:hover {
+    background: rgb(255 255 255 / .2);
+    background-color: var(--accent-color);
+}
+
+/* levels */
+
+#top {
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background-color: var(--primary-text-color);
+}
+
+#middle {
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background-color: var(--primary-text-color);
+}
+
+#bottom {
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background-color: var(--primary-text-color);
+}
+

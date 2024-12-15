@@ -1,0 +1,88 @@
+h1 {
+    color: var(--accent-color);
+    margin: 20px;
+}
+
+li {
+    list-style-type: none;
+    color: var(--primary-text-color);
+}
+
+.welcome-text {
+    position: absolute;
+    left: 10%;
+}
+
+
+#typewriter {
+    font-size: 40px;
+    font-weight: 1.3em;
+    color: var(--accent-color);
+    margin: 0; /* Gives the typewriter a margin of 0 on the top and bottom and auto on the left and right */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    width: 0; /* The width is 0 so the content is not visible until written*/
+    animation: 
+        typing 2s steps(40, end) forwards,
+        blink-caret .75s step-end infinite;
+    border-right: .15em solid var(--accent-color); /* The typwriter cursor */
+}
+.cursor {
+    border-right: .15em solid var(--accent-color);
+}
+
+/* @keyframe allows us to use animation to change from ___ to ____ */
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        /* needed to set width according to how much text was displayed for typewriter animation, just did it based off visual */
+        width: 100%; 
+    }
+}
+/* blinking cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent-color); }
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: 2.2em;
+    }
+    
+}
+
+@media screen and (max-width: 1150px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: 2em;
+    }
+    
+}
+
+@media screen and (max-width: 1050px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: 1.8em;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: 1.6em;
+        /* text-wrap: wrap;
+        justify-content: space-between; */
+        
+    }
+    
+}

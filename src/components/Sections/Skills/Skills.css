@@ -1,0 +1,22 @@
+.skills-page-content {
+    position: relative;
+}
+.skills-page-content h1{
+    font-size: 32px;
+}
+.skills-list-items li{
+    display: inline-block;    
+    list-style-type: none;
+    margin: 10px;    
+    padding: 10px;
+    border: thick solid white;
+    border-radius: 15px;
+    border-width: 3px;
+    /* needed for hovering */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.skills-list-items li:hover{
+    transform: scale(1.5); /* Scales up the item on hover */
+    box-shadow: 0 4px 10px var(--link-color); /* Adds a subtle shadow */
+    /* background-color: #e0e0e0; Optional: Changes background on hover */
+}
