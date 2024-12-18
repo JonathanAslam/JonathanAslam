@@ -5,31 +5,39 @@
 .project-page-content h1{
     font-size: 32px;
 }
-.project-list-items ul{
+ul.project-list-items{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 0;
     list-style-type: none;
-    max-width: 300px;
+    gap: 10px;
+}
+.project-list-items a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    text-align: center;
 }
 
 .project-list-items li{
-    display: inline-block;
-    flex-wrap: wrap;
-    flex-direction: row;
-    list-style-type: none;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
     margin: 30px;
-    border: thick solid white;
+    border: thick solid var(--section-divider-color);
     border-radius: 15px;
-    padding: 5em;
+    padding: 2.5em;
+    background-color: var(--accent-color);
+    width: 200px; /* Set the fixed width */
+    height: 100px; /* Set the fixed height */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 1em; /* Set the font size */
     /* needed for hovering */
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    background-color: var(--accent-color);
 }
 
 .project-list-items li:hover{
@@ -46,4 +54,46 @@
     height: auto;
     border-radius: 15px;
 }
-/* rgba(105, 110, 255, 1) */
+
+/* media query */
+
+
+@media screen and (max-width: 1150px) {
+
+    .project-page-content h1 {
+        font-size: 2em;
+    }
+    
+}
+
+@media screen and (max-width: 1050px) {
+
+    .project-page-content h1 {
+        font-size: 1.8em;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+
+    .project-page-content h1 {
+        font-size: 1.6em;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+
+    .project-page-content h1 {
+        font-size: 1.4em;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+
+    .project-page-content h1 {
+        font-size: 1em;
+    }
+    
+}

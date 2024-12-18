@@ -96,10 +96,6 @@ const ContactMe = () => {
         <br />
         <textarea name="message" id="message" placeholder='Message ...' value={formData.message} onChange={handleValueChange}></textarea>
         <br />
-        {/* <div className='tos-privacy'>
-          <label for="terms">I accept the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</label>
-          <input type="checkbox" id="terms" name="terms" required/>
-        </div> */}
         <br />
         <input type="submit" value="Send" disabled={isSubmitting} />
       {stateMessage && <p>{stateMessage}</p>}

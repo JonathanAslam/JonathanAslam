@@ -9,14 +9,47 @@ li {
 }
 
 .welcome-text {
+    display: block;
     position: absolute;
-    left: 10%;
+}
+
+.about-me-text {
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    bottom: -1vh;
+}
+
+.h3-and-icons {
+    display: flex;
+    align-items: center;
+}
+
+.h3-and-icons h3 {
+    margin-right: 10px;
+}
+
+
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+} 
+
+.social-media-icons img {
+    filter: invert(var(--invert-value));
+}
+
+.about-me-text h2 , h3 {
+    color: var(--primary-text-color);
+    font-weight: lighter;
 }
 
 
 #typewriter {
     font-size: 40px;
-    font-weight: 1.3em;
     color: var(--accent-color);
     margin: 0; /* Gives the typewriter a margin of 0 on the top and bottom and auto on the left and right */
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -25,7 +58,7 @@ li {
     animation: 
         typing 2s steps(40, end) forwards,
         blink-caret .75s step-end infinite;
-    border-right: .15em solid var(--accent-color); /* The typwriter cursor */
+        border-right: .15em solid var(--accent-color); /* The typwriter cursor */
 }
 .cursor {
     border-right: .15em solid var(--accent-color);
@@ -54,6 +87,9 @@ li {
         /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
         font-size: 2.2em;
     }
+    h2 , h3 {
+        font-size: .9em;
+    }
     
 }
 
@@ -63,6 +99,10 @@ li {
         /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
         font-size: 2em;
     }
+    h2 , h3{
+        font-size: .8em;
+    }
+    
     
 }
 
@@ -72,6 +112,10 @@ li {
         /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
         font-size: 1.8em;
     }
+    h2 , h3{
+        font-size: .7em;
+    }
+    
     
 }
 
@@ -80,9 +124,35 @@ li {
     #typewriter {
         /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
         font-size: 1.6em;
-        /* text-wrap: wrap;
-        justify-content: space-between; */
-        
     }
+    h2 , h3{
+        font-size: .6em;
+    }
+    
+    
+}
+
+@media screen and (max-width: 750px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: 1.4em;   
+    }
+    h2 , h3{
+        font-size: .5em;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: 1em;
+    }
+    h2 , h3{
+        font-size: .4em;
+    }
+    
     
 }

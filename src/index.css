@@ -39,6 +39,7 @@ h1 {
   /* scroll-bar color */
   --scrollbar-color: #018786;
   --opposite: #E0E0E0;
+  --invert-value: 0%;
 }
 
 [data-theme="dark"] {
@@ -55,5 +56,6 @@ h1 {
   --toggle-border-color: #BB86FC;
   --scrollbar-color: #03DAC6;
   --opposite: #212121;
+  --invert-value: 100%;
 }
 

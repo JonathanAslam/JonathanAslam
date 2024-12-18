@@ -4,7 +4,8 @@ import MotionHamburgerIcon from '../MotionElements/MotionHamburgerIcon';
 import {motion, MotionConfig} from 'motion/react';
 
 const Navbar = ({toggleNoScroll}) => {
-    const [isToggled, setIsToggled] = useState("load");
+    // isToggled was originally set to useState("load"), but changed to false. If there are issues in the future, try setting it to "load" again and see if it helps.
+    const [isToggled, setIsToggled] = useState(false);
     const [toggleState, setToggleState] = useState(false);
     
     const handleToggleClick = () => {
@@ -52,7 +53,6 @@ const Navbar = ({toggleNoScroll}) => {
                             },
                             close: {
                                 opacity: 0,
-                                zIndex: 'auto',
                             },
                             load: {
                                 opacity: 0,
@@ -64,19 +64,16 @@ const Navbar = ({toggleNoScroll}) => {
                             {/*  */}
                         <div>
                             <li onClick={handleLinkClick}>
-                                <a href="#">Home</a>
-                            </li>
-                            <li onClick={handleLinkClick}>
                                 <a href="#about-me-content">About</a>
                             </li>
                             <li onClick={handleLinkClick}>
-                                <a href="">Projects</a>
+                                <a href="#project-page">Projects</a>
                             </li>
                             <li onClick={handleLinkClick}>
-                                <a href="">Skills</a>
+                                <a href="#skills-page">Skills</a>
                             </li>
                             <li onClick={handleLinkClick}>
-                                <a href="">Contact</a>
+                                <a href="#contact-page">Contact</a>
                             </li>
                         </div>  
                     </motion.ul>

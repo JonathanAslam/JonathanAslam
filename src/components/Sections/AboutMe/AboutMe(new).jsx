@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './AboutMeNew.css'
+import linkedinicon from '../../../assets/linkedin-icon.svg';
+import githubicon from '../../../assets/github-icon.svg';
 
 const AboutMeNew = () => {
     const [isTypingComplete, setIsTypingComplete] = useState(false);
@@ -22,7 +24,22 @@ const AboutMeNew = () => {
                     Hello I am Jonathan, please take a look around!
                 </h1>
             </div>
-        </div>
+            <div className="about-me-text">
+                <h2>I am an aspiring web designer and game developer. Please take a look around my site and feel free to contact me! </h2>
+                <div className='h3-and-icons'>
+                    <h3>The icons to the side will take you to my LinkedIn and my GitHub profile.</h3>
+                    <div className='social-media-icons'>
+                        <a href='https://www.linkedin.com/in/jonathan-aslam/' target='_blank' rel='noreferrer'>
+                            <img src={linkedinicon} alt='linkedin'/>
+                        </a>
+                        <a href="https://github.com/JonathanAslam/" target='_blank' rel='noreferrer'>
+                            <img src={githubicon} alt='github'/>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+
+    </div>   
     )
 }
 

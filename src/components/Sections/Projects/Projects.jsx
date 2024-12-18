@@ -7,12 +7,22 @@ const Projects = () => {
     <div className='project-page-content' id='project-page'>
         <h1>Projects:</h1>
       <ul className='project-list-items'>
-        <li>proj 1</li>
-        <li>proj 2</li>
-        <li>proj 3</li>
-        <li>proj 4</li>
-        <li>proj 5</li>
-        <li>proj 6</li>
+        <a href="https://github.com/JonathanAslam/ParkNow362/" target='_blank' rel='noreferrer'>
+          <li>
+            Park Now
+            <br />
+            <br />
+            (still in development)
+          </li>
+        </a>
+        <a href="https://google.com" target='_blank' rel='noreferrer'>
+          <li>
+            Pygame Platformer
+            <br />
+            <br />
+            (still in development <br /> links to google.com)
+          </li>
+        </a>
       </ul>
     </div>
   )

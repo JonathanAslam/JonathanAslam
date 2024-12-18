@@ -9,7 +9,7 @@ import ContactMe from '../Sections/Contact/ContactMe';
 import Projects from '../Sections/Projects/Projects';
 import Skills from '../Sections/Skills/Skills';
 
-// import emileAsset from '../../assets/emile-scene.gltf';
+
 
 const PageContent = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -65,40 +65,20 @@ const PageContent = () => {
         <RenderModelOne backgroundColor={modelBackgroundColor}/>
       </div>
 
+      <div className='footer'>
+        <p>@2024 Jonathan Aslam. All rights reserved.</p>
+      </div>
+
+
       <div className="main-page" ref={mainPageRef}>        
         {/* scroll bar feature */}
         {/* <MotionScrollBar targetRef={mainPageRef} /> */}
-        {/* navbar component */}
         <div className='main-page-content'>
+          {/* icons and images */}
+          {/* navbar component */}
           <Navbar toggleNoScroll={toggleNoScroll}/>
           {/* sections */}
           <AboutMeNew/>
-          <div id="section1">
-            <ul>
-              <li>something1</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-            </ul>
-          </div>
-          <div id="section9">
-            <ul>
-              <li>something9</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-            </ul>
-          </div>
           <div className='project-section'>
             <Projects/>
           </div>
@@ -110,6 +90,12 @@ const PageContent = () => {
           </div>
         </div>
       </div>
+      {/* add contact section for small viewport usage */}
+      <div className='contact-me-button'>
+        <p>Contact Me:</p>
+        <button onClick={() => window.location = 'mailto:jonathanaslam@gmail.com'}>Contact Me</button>
+      </div>
+
     </div>
   );
 };

@@ -35,7 +35,6 @@
 
 #blur {
     backdrop-filter: blur(5px);
-    /* temp */
 }
 
 
@@ -57,7 +56,7 @@
 
 
 /* media query */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 725px) {
     .navbar {
         display: flex;
         justify-content: center;
