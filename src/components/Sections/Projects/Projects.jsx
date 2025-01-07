@@ -15,12 +15,12 @@ const Projects = () => {
             (still in development)
           </li>
         </a>
-        <a href="https://google.com" target='_blank' rel='noreferrer'>
+        <a href="https://github.com/JonathanAslam/Flarpy-Byrd" target='_blank' rel='noreferrer'>
           <li>
-            Pygame Platformer
+            Flarpy Byrd
             <br />
             <br />
-            (still in development <br /> links to google.com)
+            Built in Unity
           </li>
         </a>
       </ul>

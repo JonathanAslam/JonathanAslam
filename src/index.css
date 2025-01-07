@@ -28,14 +28,14 @@ h1 {
   --background-color: #FFFFFF; 
   --primary-text-color: #212121;
   --secondary-text-color: #616161;
-  --accent-color: #6200EE;
-  --link-color: #018786;
+  --accent-color: #018786;
+  --link-color: #6200EE;
   --section-bg-color: #F5F5F5;
   --section-divider-color: #282828;
-  --toggle-bg-color: #6200EE;
   /* make same color as opposite theme bg color to hide when toggled */
   --toggle-text-color: #121212;
-  --toggle-border-color: #6200EE;
+  --toggle-bg-color: #018786;
+  --toggle-border-color: #018786;
   /* scroll-bar color */
   --scrollbar-color: #018786;
   --opposite: #E0E0E0;
