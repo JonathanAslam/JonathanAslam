@@ -20,7 +20,15 @@ const Projects = () => {
             Flarpy Byrd
             <br />
             <br />
-            Built in Unity
+            Built in Unity 2D
+          </li>
+        </a>
+        <a href="https://github.com/JonathanAslam/JohnsAimLabs" target='_blank' rel='noreferrer'>
+          <li>
+            John'sAimLabs
+            <br />
+            <br />
+            Built in Unity 3D
           </li>
         </a>
       </ul>
