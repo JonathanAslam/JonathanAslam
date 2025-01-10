@@ -7,12 +7,14 @@ const Skills = () => {
       <h1>Skills:</h1>
       <ul className='skills-list-items'>
         <li>C++</li>
+        <li>C#</li>
+        <li>Unity</li>
         <li>Python</li>
+        <li>JavaScript</li>
         <li>React</li>
         <li>React Native</li>
         <li>HTML</li>
         <li>CSS</li>
-        <li>JavaScript</li>
         <li>PHP</li>
         <li>SQL</li>
         <li>ThreeJS</li>

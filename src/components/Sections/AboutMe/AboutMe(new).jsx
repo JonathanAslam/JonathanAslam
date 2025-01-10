@@ -25,7 +25,7 @@ const AboutMeNew = () => {
                 </h1>
             </div>
             <div className="about-me-text">
-                <h2>I am an aspiring web designer and game developer. Please take a look around my site and feel free to contact me! </h2>
+                <h2>I am an aspiring game developer and web designer. Please take a look around my site and feel free to contact me! </h2>
                 <div className='h3-and-icons'>
                     <h3>The icons to the side will take you to my LinkedIn and my GitHub profile.</h3>
                     <div className='social-media-icons'>
