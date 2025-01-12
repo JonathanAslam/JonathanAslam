@@ -72,34 +72,42 @@ const ContactMe = () => {
     <div className='contact-page-content' id='contact-page'>
       {/* simple contact form */}
       <h1>Contact Me:</h1>
-      <form onSubmit={sendEmail}>
-        <div className='fname'>
-          <label htmlFor="fname">First Name:</label>
+      <div className='contact-form'>
+        <form onSubmit={sendEmail}>
+          <div className='fname'>
+            <label htmlFor="fname">First Name:</label>
+            <br />
+            <input type="text" name="fname" id="fname" placeholder='*First ...' value={formData.fname} onChange={handleValueChange} required />
+          </div>
+          <div className='lname'>
+            <label htmlFor="lname">Last Name:</label>
+            <br />
+            <input type="text" name="lname" id="lname" placeholder='*Last ...' value={formData.lname} onChange={handleValueChange} required />
+          </div>
           <br />
-          <input type="text" name="fname" id="fname" placeholder='*First ...' value={formData.fname} onChange={handleValueChange} required />
-        </div>
-        <div className='lname'>
-          <label htmlFor="lname">Last Name:</label>
+          <label htmlFor="email">Email:</label>
           <br />
-          <input type="text" name="lname" id="lname" placeholder='*Last ...' value={formData.lname} onChange={handleValueChange} required />
-        </div>
-        <br />
-        <label htmlFor="email">Email:</label>
-        <br />
-        <input type="email" name="userEmail" id="email" placeholder='*Email ...' value={formData.userEmail} onChange={handleValueChange} required />
-        <br />
-        <label htmlFor="website-link">Social Media Link:</label>
-        <br />
-        <input type="url" name="socialMediaLink" id="website-link" placeholder='Link ...' value={formData.socialMediaLink} onChange={handleValueChange} required/>
-        <br />
-        <label htmlFor="website-link">Write Any Messages Here:</label>
-        <br />
-        <textarea name="message" id="message" placeholder='Message ...' value={formData.message} onChange={handleValueChange}></textarea>
-        <br />
-        <br />
-        <input type="submit" value="Send" disabled={isSubmitting} />
-      {stateMessage && <p>{stateMessage}</p>}
-      </form>
+          <input type="email" name="userEmail" id="email" placeholder='*Email ...' value={formData.userEmail} onChange={handleValueChange} required />
+          <br />
+          <label htmlFor="website-link">Social Media Link:</label>
+          <br />
+          <input type="url" name="socialMediaLink" id="website-link" placeholder='Link ...' value={formData.socialMediaLink} onChange={handleValueChange} required/>
+          <br />
+          <label htmlFor="website-link">Write Any Messages Here:</label>
+          <br />
+          <textarea name="message" id="message" placeholder='Message ...' value={formData.message} onChange={handleValueChange}></textarea>
+          <br />
+          <br />
+          <input type="submit" value="Send" disabled={isSubmitting} />
+        {stateMessage && <p>{stateMessage}</p>}
+        </form>
+      </div>
+      <div className='contact-button'>
+          <div className='contact-me-button'>
+            <p>Contact Me:</p>
+            <button onClick={() => window.location = 'mailto:jonathanaslam@gmail.com'}>Email</button>
+          </div> 
+      </div>
     </div>
 
   )

@@ -55,16 +55,16 @@
 }
 
 
-/* media query */
+/* media query - use if issues in the future with current layout*/
 @media screen and (max-width: 725px) {
-    .navbar {
+    /* .navbar {
         display: flex;
         justify-content: center;
         align-items: center;
         top: 0;
         left: 0;
-    }
-
+    } */
+/* 
     .page-links {
         position: absolute;
         width: 90vw;
@@ -79,6 +79,6 @@
         border-top: solid 1px var(--primary-text-color);
         border-bottom: solid 2px var(--primary-text-color);
         padding: 3vh 0;
-    }
+    } */
 
 }

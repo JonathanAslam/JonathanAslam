@@ -30,6 +30,13 @@
     border-width: 2px;
 }
 
+/* button */
+
+.contact-me-button {
+    display: none;
+}
+
+
 /* how we position the labels ontop of the textbox */
 .fname , .lname {
     float:left;
@@ -49,9 +56,9 @@
     width: 50vw;
 }
 
-.tos-privacy a{
+/* .tos-privacy a{
     color: #696EFF;
-}
+} */
 
 /* media query */
 
@@ -92,6 +99,20 @@
 
     .contact-page-content h1 {
         font-size: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .contact-form {
+        display: none;
+    }
+
+    .contact-me-button {
+        display: flex;
+        position: absolute;
+        padding-left: 20px;
+        color: var(--primary-text-color);
     }
     
 }

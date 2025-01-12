@@ -19,7 +19,7 @@ li {
     position: relative;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 75%;
+    width: 85%;
     bottom: -1vh;
 }
 
@@ -98,11 +98,7 @@ li {
     #typewriter {
         /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
         font-size: 2.1em;
-    }
-    h2 , h3{
-        font-size: 1.1em;
-    }
-    
+    }    
     
 }
 
@@ -113,9 +109,8 @@ li {
         font-size: 1.9em;
     }
     h2 , h3{
-        font-size: .9em;
+        font-size: 1.2em;
     }
-    
     
 }
 
@@ -126,9 +121,20 @@ li {
         font-size: 1.7em;
     }
     h2 , h3{
-        font-size: .8em;
+        font-size: 1em;
     }
     
+}
+
+@media screen and (max-width: 850px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: 1.6em;
+    }
+    h2 , h3{
+        font-size: .9em;
+    }
     
 }
 
@@ -137,6 +143,18 @@ li {
     #typewriter {
         /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
         font-size: 1.5em;   
+    }
+    h2 , h3{
+        font-size: .8em;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: 1.4em;   
     }
     h2 , h3{
         font-size: .7em;
@@ -148,10 +166,7 @@ li {
 
     #typewriter {
         /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
-        font-size: 1.3em;
-    }
-    h2 , h3{
-        font-size: .7em;
+        font-size: 1.2em;
     }
     
 }
@@ -160,23 +175,54 @@ li {
 
     #typewriter {
         /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
-    h2 , h3{
-        font-size: .7em;
+
+}
+
+@media screen and (max-width: 540px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: 1em;
+    }
+    h2, h3 {
+        font-size: .65em;
     }
     
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 500px) {
 
     #typewriter {
         /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
-        font-size: 1.1em;
+        font-size: .9em;   
     }
-    h2 , h3{
-        font-size: .7em;
+    h2, h3 {
+        font-size: .6em;
     }
     
+}
+
+@media screen and (max-width: 460px) {
+
+    #typewriter {
+        /* original font size for all h1 tags set to 2.5 em, so we need to change the font size of the typewrighter h1 to 2.2em */
+        font-size: .8em;   
+    }
+    h2, h3 {
+        font-size: .5em;
+    }
+    
+}
+
+@media screen and (max-width: 415px) {
+
+    #typewriter {
+        font-size: .7em;   
+    }
+    h2, h3 {
+        font-size: .4em;
+    }
     
 }

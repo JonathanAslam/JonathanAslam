@@ -91,10 +91,7 @@ const PageContent = () => {
         </div>
       </div>
       {/* add contact section for small viewport usage */}
-      <div className='contact-me-button'>
-        <p>Contact Me:</p>
-        <button onClick={() => window.location = 'mailto:jonathanaslam@gmail.com'}>Contact Me</button>
-      </div>
+      
 
     </div>
   );
