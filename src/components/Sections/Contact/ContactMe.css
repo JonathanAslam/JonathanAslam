@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     justify-content: center;
-    padding: 1vw;
+    /* padding: 1vw; */
     flex-direction: column;
     color: var(--primary-text-color);
 }
@@ -12,10 +12,10 @@
 }
 
 .contact-page-content form {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     padding: 35px;
     width: fit-content;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     width: 100%;
 }
 
