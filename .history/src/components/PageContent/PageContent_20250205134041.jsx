@@ -59,10 +59,10 @@ const PageContent = () => {
             <p>Click On Me!</p>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className='three-js-scene' >
         <RenderModelOne backgroundColor={modelBackgroundColor}/>
-      </div> */}
+      </div>
 
       <div className='footer'>
         <p>@2024 Jonathan Aslam. All rights reserved.</p>

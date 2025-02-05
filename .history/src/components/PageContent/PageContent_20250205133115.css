@@ -1,0 +1,176 @@
+.whole-page {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    /* apply color change transitition over 1 second period */
+    transition: background-color 1s ease, color 1s ease;
+}
+
+.background-content {
+    width: 100%;
+    height: 100%;
+}
+
+.main-page {
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+    height: 90vh;
+    background-color: var(--section-bg-color);
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    border: 3px solid var(--section-divider-color);
+    scroll-behavior: smooth;
+    /* apply color change transitition over 1 second period */
+    transition: background-color 1s ease, color 1s ease;
+}
+
+.main-page-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/* applies when user clicks on text at top of screen */
+.hidden {
+    visibility: hidden;
+}
+
+.hide-main-page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 10vw;
+    height: 3vh;
+    padding-top: 1.2vh;
+    text-wrap: nowrap;
+}
+
+/* sections */
+
+.three-js-scene {
+    display: flex;
+    flex: 1;
+    position: relative;
+    width: 60vw;
+    height: 60vh;
+    top: 18vh;
+    left: 20vw;
+    background-color: var(--section-bg-color);
+    border: solid 1px var(--section-divider-color);
+}
+
+.about-me-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-left: 20px;
+    height: 30vh;
+    width: 70vw;
+}
+
+.project-section {
+    width: 90%;
+}
+
+.skill-section {
+    width: 90%;
+}
+
+.contact-section {
+    width: 100%;
+}
+
+.contact-me-button {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 100vw;
+}
+
+
+/* footer */
+.footer {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+}
+
+.footer p{
+    color: var(--primary-text-color);
+}
+
+
+/* toggle */
+/* use for icon */
+.toggle-container{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: .5vh;
+    right: 2vw;
+}
+
+
+/* media query - use if navbar media query is used as well*/
+/* 
+@media screen and (max-width: 725px) {
+
+    .project-section {
+        position: relative;
+        left: 9vw;
+
+    }
+    .skill-section {
+        position: relative;
+        left: 9vw;
+    }
+    .contact-section {
+        position: relative;
+        left: 9vw;
+    }
+} */
+
+@media screen and (max-width: 600px) {
+    .main-page {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .footer p {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .footer {
+        rotate: 270deg;
+        right: -5em;
+        top: 50vh;
+        height: 20px;
+    }
+    .footer p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) and (max-height: 450px) {
+    .footer {
+        right: -6em;
+    }
+    
+}

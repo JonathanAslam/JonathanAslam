@@ -53,7 +53,7 @@ const PageContent = () => {
       </div>
 
       {/* removed the threeJS feature, uncomment to bring back */}
-      {/* <div className='hide-main-page' onClick={toggleHideMainPage}>
+      <div className='hide-main-page' onClick={toggleHideMainPage}>
         <ul>
           <li>
             <p>Click On Me!</p>
@@ -62,7 +62,7 @@ const PageContent = () => {
       </div>
       <div className='three-js-scene' >
         <RenderModelOne backgroundColor={modelBackgroundColor}/>
-      </div> */}
+      </div>
 
       <div className='footer'>
         <p>@2024 Jonathan Aslam. All rights reserved.</p>

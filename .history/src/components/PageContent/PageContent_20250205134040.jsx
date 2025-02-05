@@ -59,8 +59,8 @@ const PageContent = () => {
             <p>Click On Me!</p>
           </li>
         </ul>
-      </div>
-      <div className='three-js-scene' >
+      </div> */}
+      {/* <div className='three-js-scene' >
         <RenderModelOne backgroundColor={modelBackgroundColor}/>
       </div> */}
 

@@ -59,10 +59,12 @@ const PageContent = () => {
             <p>Click On Me!</p>
           </li>
         </ul>
-      </div>
+      </div> */}
+
+      {/* need to figure out how to get it to resize without reloading page, canvas does not want to resize until page is reloaded */}
       <div className='three-js-scene' >
         <RenderModelOne backgroundColor={modelBackgroundColor}/>
-      </div> */}
+      </div>
 
       <div className='footer'>
         <p>@2024 Jonathan Aslam. All rights reserved.</p>
