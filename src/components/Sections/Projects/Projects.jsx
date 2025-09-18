@@ -23,12 +23,14 @@ const Projects = () => {
             Built in Unity 2D
           </li>
         </a>
-        <a href="https://github.com/JonathanAslam/ParkNow362/" target='_blank' rel='noreferrer'>
+        <a href="https://github.com/JonathanAslam/CoolSpaceGames/" target='_blank' rel='noreferrer'>
           <li>
-            Park Now
+            CoolSpaceGames
             <br />
             <br />
-            (still in development)
+            ReactJS + WebGL
+            <br />
+            Unity 2D and 3D
           </li>
         </a>
       </ul>
