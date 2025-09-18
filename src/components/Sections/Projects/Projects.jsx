@@ -23,7 +23,7 @@ const Projects = () => {
             Built in Unity 2D
           </li>
         </a>
-        <a href="https://github.com/JonathanAslam/CoolSpaceGames/" target='_blank' rel='noreferrer'>
+        <a href="https://coolspacegames.vercel.app/" target='_blank' rel='noreferrer'>
           <li>
             CoolSpaceGames
             <br />
