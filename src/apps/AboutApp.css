@@ -1,0 +1,111 @@
+.about-app {
+  padding: 16px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--bg-window);
+}
+
+.about-hero {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.about-photo {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid;
+  border-color: var(--bevel-shadow) var(--bevel-bright) var(--bevel-bright) var(--bevel-shadow);
+}
+
+.about-intro {
+  flex: 1;
+}
+
+.about-name {
+  font-size: 20px;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.about-role {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.about-bio {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.about-links {
+  display: flex;
+  gap: 6px;
+}
+
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 4px 12px;
+  background: var(--btn-face);
+  border: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+  font-family: inherit;
+}
+
+.about-link:hover {
+  background: var(--btn-light);
+}
+
+.about-link:active {
+  border-color: var(--bevel-dark) var(--bevel-bright) var(--bevel-bright) var(--bevel-dark);
+}
+
+.about-section-title {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 4px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-group-title {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.skill-tag {
+  font-size: 12px;
+  color: var(--text-primary);
+  padding: 2px 10px;
+  background: var(--btn-face);
+  border: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+}

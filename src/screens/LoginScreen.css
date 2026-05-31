@@ -1,0 +1,147 @@
+.login-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #008080;
+  background-image: radial-gradient(circle, rgba(0, 60, 60, 0.35) 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Dialog window ───────────────────────── */
+.login-dialog {
+  width: 360px;
+  background: var(--btn-face);
+  border: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+  box-shadow: 2px 2px 0 var(--bevel-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Title bar ───────────────────────────── */
+.login-titlebar {
+  height: 24px;
+  background: linear-gradient(90deg, var(--titlebar-start) 0%, var(--titlebar-end) 100%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  flex-shrink: 0;
+}
+
+.login-titlebar-icon {
+  font-size: 14px;
+  color: #ffcc00;
+  line-height: 1;
+}
+
+.login-titlebar-text {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ── Body ────────────────────────────────── */
+.login-body {
+  padding: 18px 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-profile-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.login-avatar {
+  font-size: 52px;
+  line-height: 1;
+  color: #ffcc00;
+  text-shadow: 1px 1px 0 #808080;
+  flex-shrink: 0;
+}
+
+.login-welcome-title {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.login-welcome-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.login-divider {
+  height: 0;
+  border-top: 1px solid var(--btn-shadow);
+  border-bottom: 1px solid var(--bevel-bright);
+}
+
+.login-field-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-label {
+  font-size: 13px;
+  color: var(--text-primary);
+  width: 90px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.login-input {
+  flex: 1;
+  background: #ffffff;
+  border: 2px solid;
+  border-color: var(--bevel-shadow) var(--bevel-bright) var(--bevel-bright) var(--bevel-shadow);
+  padding: 4px 8px;
+  font-size: 13px;
+  color: var(--text-primary);
+  font-family: inherit;
+  outline: none;
+}
+
+/* ── Footer ──────────────────────────────── */
+.login-footer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px 16px;
+}
+
+.login-btn {
+  min-width: 80px;
+  padding: 5px 16px;
+  font-size: 13px;
+  font-family: inherit;
+  background: var(--btn-face);
+  color: var(--text-primary);
+  border: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+  cursor: pointer;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: var(--btn-light);
+}
+
+.login-btn:active:not(:disabled) {
+  border-color: var(--bevel-dark) var(--bevel-bright) var(--bevel-bright) var(--bevel-dark);
+  padding: 6px 15px 4px 17px;
+}
+
+.login-btn:disabled {
+  color: var(--text-muted);
+  cursor: default;
+}
+
+.login-btn-ok {
+  font-weight: bold;
+}

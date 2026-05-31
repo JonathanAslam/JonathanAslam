@@ -1,0 +1,125 @@
+.contact-app {
+  padding: 16px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--bg-window);
+}
+
+.contact-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-title {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.contact-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.form-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.form-input {
+  background: #ffffff;
+  border: 2px solid;
+  border-color: var(--bevel-shadow) var(--bevel-bright) var(--bevel-bright) var(--bevel-shadow);
+  padding: 6px 10px;
+  font-size: 14px;
+  color: var(--text-primary);
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+}
+
+.form-input:focus {
+  border-color: var(--bevel-dark) var(--bevel-light) var(--bevel-light) var(--bevel-dark);
+  outline: 1px dotted #000000;
+  outline-offset: -3px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 85px;
+}
+
+.form-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--btn-face);
+  color: var(--text-primary);
+  border: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+  padding: 7px 18px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.form-submit:hover:not(:disabled) {
+  background: var(--btn-light);
+}
+
+.form-submit:active:not(:disabled) {
+  border-color: var(--bevel-dark) var(--bevel-bright) var(--bevel-bright) var(--bevel-dark);
+  padding: 8px 17px 6px 19px;
+}
+
+.form-submit:disabled {
+  color: var(--text-muted);
+  cursor: default;
+}
+
+.form-submit.sending {
+  border-color: var(--bevel-dark) var(--bevel-bright) var(--bevel-bright) var(--bevel-dark);
+}
+
+.btn-spinner {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--btn-shadow);
+  border-top-color: var(--text-primary);
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.form-error {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #cc0000;
+  margin-top: -4px;
+}

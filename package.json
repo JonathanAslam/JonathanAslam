@@ -14,10 +14,11 @@
     "@mui/material": "^6.1.10",
     "@vercel/analytics": "^1.4.1",
     "emailjs": "^4.0.3",
-    "motion": "^11.13.1",
+    "motion": "^11.18.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
+    "react-router-dom": "^7.9.5",
     "styled-components": "^6.1.13",
     "three": "^0.171.0"
   },
@@ -31,7 +32,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",
-    "vite": "^5.4.8",
-    "vite-plugin-static-copy": "^2.2.0"
+    "vite": "^7.2.1",
+    "vite-plugin-static-copy": "^3.1.4"
   }
 }

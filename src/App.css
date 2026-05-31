@@ -1,0 +1,29 @@
+.desktop {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #008080;
+  background-image: radial-gradient(circle, rgba(0, 60, 60, 0.35) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* taskbar sits at bottom; desktop-area fills the rest */
+
+.desktop-area {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.desktop-icons-grid {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}

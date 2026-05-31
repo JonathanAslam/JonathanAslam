@@ -1,0 +1,85 @@
+.window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg-window);
+  border: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+  box-shadow: 1px 1px 0 var(--bevel-dark);
+  min-width: 320px;
+  min-height: 220px;
+}
+
+.window-titlebar {
+  height: 24px;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, var(--titlebar-start) 0%, var(--titlebar-end) 100%);
+  border-bottom: 1px solid var(--bevel-dark);
+  display: flex;
+  align-items: center;
+  padding: 0 3px 0 6px;
+  cursor: grab;
+  user-select: none;
+  gap: 6px;
+}
+
+.window-titlebar:active {
+  cursor: grabbing;
+}
+
+.window-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--titlebar-text);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.window-controls {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.win-btn {
+  width: 16px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 1;
+  background: var(--btn-face);
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0;
+  border: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+  font-family: inherit;
+}
+
+.win-btn:active:not(:disabled) {
+  border-color: var(--bevel-dark) var(--bevel-bright) var(--bevel-bright) var(--bevel-dark);
+}
+
+.win-btn:disabled {
+  color: var(--text-muted);
+  cursor: default;
+}
+
+.win-btn-close {
+  color: #000000;
+}
+
+.window-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--bg-window);
+}

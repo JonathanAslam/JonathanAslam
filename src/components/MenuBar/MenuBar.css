@@ -1,0 +1,36 @@
+.menubar {
+  position: relative;
+  z-index: 1000;
+  height: 24px;
+  flex-shrink: 0;
+  background: var(--btn-face);
+  border-bottom: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.menubar-name {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.menubar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--btn-face);
+  border: 1px solid;
+  border-color: var(--bevel-shadow) var(--bevel-bright) var(--bevel-bright) var(--bevel-shadow);
+  padding: 1px 6px;
+}
+
+.menubar-date,
+.menubar-time {
+  font-size: 12px;
+  color: var(--text-primary);
+}

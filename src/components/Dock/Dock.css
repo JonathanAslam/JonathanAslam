@@ -1,0 +1,61 @@
+.dock-wrap {
+  position: relative;
+  z-index: 900;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 10px;
+}
+
+.dock {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: var(--btn-face);
+  border: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+  box-shadow: 1px 1px 0 var(--bevel-dark);
+}
+
+.dock-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.dock-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--btn-face);
+  border: 2px solid;
+  border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color, #000080);
+}
+
+.dock-item:hover .dock-icon {
+  background: var(--btn-light);
+}
+
+.dock-item:active .dock-icon {
+  border-color: var(--bevel-dark) var(--bevel-bright) var(--bevel-bright) var(--bevel-dark);
+}
+
+.dock-dot {
+  width: 4px;
+  height: 4px;
+  background: #000080;
+  display: block;
+}
+
+.dock-dot.dim {
+  opacity: 0.4;
+}
