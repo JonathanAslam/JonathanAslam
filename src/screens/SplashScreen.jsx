@@ -36,7 +36,7 @@ export default function SplashScreen({ onComplete }) {
       <div className="splash-center">
         <div className="splash-smiley">☺</div>
         <h1 className="splash-title">Jonathan's Computer</h1>
-        <p className="splash-version">Portfolio Edition — 2025</p>
+        <p className="splash-version">Portfolio Edition — 2026</p>
       </div>
 
       <div className="splash-bottom">
