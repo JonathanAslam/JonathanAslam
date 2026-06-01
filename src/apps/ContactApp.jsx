@@ -3,14 +3,14 @@ import emailjs from '@emailjs/browser'
 import { FiSend, FiCheck, FiAlertCircle } from 'react-icons/fi'
 import './ContactApp.css'
 
-const SERVICE_ID  = import.meta.env.VITE_SERVICE_ID
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID
 const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID
-const PUBLIC_KEY  = import.meta.env.VITE_PUBLIC_KEY
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
 
 export default function ContactApp() {
   const formRef = useRef(null)
   const [status, setStatus] = useState('idle') // idle | sending | success | error
-  const [fields, setFields] = useState({ name: '', email: '', message: '' })
+  const [fields, setFields] = useState({ from_name: '', from_email: '', media_link: '', message: '' })
 
   const handleChange = (e) => {
     setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }))
@@ -22,7 +22,7 @@ export default function ContactApp() {
     try {
       await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
       setStatus('success')
-      setFields({ name: '', email: '', message: '' })
+      setFields({ from_name: '', from_email: '', media_link: '', message: '' })
     } catch {
       setStatus('error')
     }
@@ -41,8 +41,8 @@ export default function ContactApp() {
           <input
             className="form-input"
             type="text"
-            name="name"
-            value={fields.name}
+            name="from_name"
+            value={fields.from_name}
             onChange={handleChange}
             placeholder="Your name"
             required
@@ -54,10 +54,23 @@ export default function ContactApp() {
           <input
             className="form-input"
             type="email"
-            name="email"
-            value={fields.email}
+            name="from_email"
+            value={fields.from_email}
             onChange={handleChange}
             placeholder="your@email.com"
+            required
+          />
+        </div>
+
+        <div className="form-row">
+          <label className="form-label">Social Link</label>
+          <input
+            className="form-input"
+            type="text"
+            name="media_link"
+            value={fields.media_link}
+            onChange={handleChange}
+            placeholder="https://"
             required
           />
         </div>

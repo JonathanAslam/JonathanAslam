@@ -11,7 +11,7 @@
 
 /* ── Dialog window ───────────────────────── */
 .login-dialog {
-  width: 360px;
+  width: min(360px, 92vw);
   background: var(--btn-face);
   border: 2px solid;
   border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);

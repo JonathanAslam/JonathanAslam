@@ -93,3 +93,9 @@
   background: var(--btn-face);
   border: 1px solid var(--btn-shadow);
 }
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -33,7 +33,10 @@ export default function WelcomeApp({ onClose }) {
             </li>
           </ul>
           <p className="welcome-tip">
-            Tip: You can open multiple apps at once and arrange them however you like.
+            Tip: You can open multiple apps at once and arrange them however you like. 
+          </p>
+          <p className='welcome-tip'>
+            This experience is better on a laptop or desktop, as the screen dimensions must be larger than 13" length.
           </p>
         </div>
       </div>

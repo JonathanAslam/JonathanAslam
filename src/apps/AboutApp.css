@@ -109,3 +109,19 @@
   border: 2px solid;
   border-color: var(--bevel-bright) var(--bevel-dark) var(--bevel-dark) var(--bevel-bright);
 }
+
+@media (max-width: 480px) {
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-links {
+    justify-content: center;
+  }
+
+  .skills-grid {
+    gap: 8px;
+  }
+}

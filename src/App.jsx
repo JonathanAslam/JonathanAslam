@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { AnimatePresence } from 'motion/react'
 import { Analytics } from '@vercel/analytics/react'
-import { FiUser, FiFolder, FiMail, FiInfo } from 'react-icons/fi'
+import { FiUser, FiFolder, FiMail, FiInfo, FiBriefcase } from 'react-icons/fi'
 
 import DesktopIcon from './components/DesktopIcon/DesktopIcon'
 import Window from './components/Window/Window'
@@ -10,6 +10,7 @@ import AboutApp from './apps/AboutApp'
 import ProjectsApp from './apps/ProjectsApp'
 import ContactApp from './apps/ContactApp'
 import WelcomeApp from './apps/WelcomeApp'
+import ExperienceApp from './apps/ExperienceApp'
 import LoginScreen from './screens/LoginScreen'
 import SplashScreen from './screens/SplashScreen'
 
@@ -31,6 +32,14 @@ const APPS = [
     color: '#505050',
     defaultPosition: { x: 180, y: 90 },
     defaultSize: { width: 740, height: 540 },
+  },
+  {
+    id: 'experience',
+    label: 'Experience',
+    icon: FiBriefcase,
+    color: '#505050',
+    defaultPosition: { x: 200, y: 80 },
+    defaultSize: { width: 620, height: 500 },
   },
   {
     id: 'contact',
@@ -175,10 +184,11 @@ export default function App() {
                 onFocus={() => focusApp(id)}
                 onMove={(pos) => moveWindow(id, pos)}
               >
-                {id === 'about'    && <AboutApp />}
-                {id === 'projects' && <ProjectsApp />}
-                {id === 'contact'  && <ContactApp />}
-                {id === 'welcome'  && <WelcomeApp onClose={() => closeApp('welcome')} />}
+                {id === 'about'      && <AboutApp />}
+                {id === 'projects'   && <ProjectsApp />}
+                {id === 'experience' && <ExperienceApp />}
+                {id === 'contact'    && <ContactApp />}
+                {id === 'welcome'    && <WelcomeApp onClose={() => closeApp('welcome')} />}
               </Window>
             ) : null
           })}

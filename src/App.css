@@ -43,3 +43,11 @@
   gap: 12px;
   align-items: center;
 }
+
+@media (max-width: 960px) {
+  .desktop-icons-grid {
+    top: 12px;
+    left: 8px;
+    gap: 8px;
+  }
+}

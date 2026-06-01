@@ -83,3 +83,19 @@
   overflow-x: hidden;
   background: var(--bg-window);
 }
+
+@media (max-width: 960px) {
+  .window {
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: calc(100dvh - 32px) !important;
+    min-width: unset;
+    min-height: unset;
+  }
+
+  .window-titlebar {
+    cursor: default;
+  }
+}
