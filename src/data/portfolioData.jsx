@@ -64,7 +64,7 @@ export const PROJECTS = [
     title: 'JKKFitness',
     description: <>Built a full-stack health analytics web app <strong>(MERN + Flask)</strong> that analyzes user health metrics (BMI, diabetes, blood pressure) and delivers personalized weight management recommendations using a <strong>scikit-learn Random Forest</strong> classifier</>,
     tech: ['MongoDB', 'Express', 'Node', 'React', 'Flask(python 3)', 'Scikit-Learn'],
-    github: 'https://github.com/JonathanAslam',
+    github: 'https://github.com/JonathanAslam/JKKFitness',
     live: null,
   },
   {
@@ -72,15 +72,15 @@ export const PROJECTS = [
     title: 'Merge',
     description: <>Developed a <strong>social networking platform</strong> enabling hackathon participants to form teams and network prior to events through a <strong>Tinder-style matching interface</strong> with swipeable profile cards.</>,
     tech: ['Swift/SwiftUI', 'FirebaseAuth', 'Firestore DB'],
-    github: 'https://github.com/JonathanAslam',
+    github: 'https://github.com/JonathanAslam/Merge',
     live: null,
   },
   {
     id: 4,
     title: 'Scan & Save',
-    description: 'A project description goes here — talk about the impact, the stack, and your role in building it.',
-    tech: ['Next.js', 'Tailwind', 'Supabase'],
-    github: 'https://github.com/JonathanAslam',
+    description: <>Built a full-stack <strong>mobile grocery price-comparison app</strong> with <strong>React Native (Expo)</strong> that lets users scan barcodes in-store to see current prices, 6-month price history, and cheaper alternatives across retailers, backed by a <strong>Node.js/Express</strong> API and <strong>Firestore</strong> database</>,
+    tech: ['React Native', 'Expo', 'Node.js', 'Express', 'Firebase Auth', 'Firestore'],
+    github: 'https://github.com/JonathanAslam/ScanAndSave',
     live: null,
   },
 ]
