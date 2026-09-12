@@ -8,9 +8,9 @@ export const PROFILE = {
 }
 
 export const SKILLS = [
-  { label: 'Languages', items: ['JavaScript', 'Python', 'HTML/CSS', 'SQL'] },
-  { label: 'Frameworks', items: ['React', 'Node.js', 'Express', 'Vite'] },
-  { label: 'Tools', items: ['Git', 'Figma', 'VS Code', 'Vercel'] },
+  { label: 'Languages', items: ['Go', 'C++', 'Python', 'C#', 'C', 'JavaScript', 'x86 Assembly', 'SQL', 'PostgreSQL', 'MongoDB'] },
+  { label: 'Frameworks & Libraries', items: ['React', 'Node.js', 'React Native', 'Scikit-Learn', 'Jira', 'Agile Methodology'] },
+  { label: 'Tools & Technologies', items: ['AWS (SNS, SQS, S3, CloudWatch)', 'Docker', 'Kubernetes', 'Terraform/Terragrunt', 'Git', 'Linux', 'CI/CD'] },
 ]
 
 export const EXPERIENCES = [
