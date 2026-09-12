@@ -94,6 +94,12 @@
   border: 1px solid var(--btn-shadow);
 }
 
+/* increase the strength of the bold for <strong> */
+strong {
+  font-weight: 900;
+  color: black;
+}
+
 @media (max-width: 480px) {
   .projects-grid {
     grid-template-columns: 1fr;

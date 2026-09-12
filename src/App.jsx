@@ -13,6 +13,7 @@ import WelcomeApp from './apps/WelcomeApp'
 import ExperienceApp from './apps/ExperienceApp'
 import LoginScreen from './screens/LoginScreen'
 import SplashScreen from './screens/SplashScreen'
+import SimplePortfolio from './screens/SimplePortfolio'
 
 import './App.css'
 
@@ -73,7 +74,7 @@ function welcomeInitialState() {
 
 export default function App() {
   // ── All hooks must be at the top, unconditionally ──
-  const [phase, setPhase] = useState('login')
+  const [phase, setPhase] = useState('simple')
   const [windows, setWindows] = useState(welcomeInitialState)
   const [topZ, setTopZ] = useState(10)
 
@@ -144,6 +145,10 @@ export default function App() {
   }
 
   // ── Phase rendering ────────────────────────────────
+  if (phase === 'simple') {
+    return <SimplePortfolio onLaunch={() => setPhase('login')} />
+  }
+
   if (phase === 'login') {
     return <LoginScreen onLogin={() => setPhase('splash')} />
   }

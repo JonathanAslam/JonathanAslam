@@ -1,40 +1,6 @@
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
+import { PROJECTS } from '../data/portfolioData'
 import './ProjectsApp.css'
-
-const PROJECTS = [
-  {
-    id: 1,
-    title: 'Project One',
-    description: 'A brief description of what this project does, the problem it solves, and what you learned building it.',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    github: 'https://github.com/JonathanAslam',
-    live: null,
-  },
-  {
-    id: 2,
-    title: 'Hackathon Project',
-    description: 'Built during a hackathon — a fast-paced project that pushed the limits of what could be shipped in 24 hours.',
-    tech: ['Python', 'Flask', 'JavaScript'],
-    github: 'https://github.com/JonathanAslam',
-    live: null,
-  },
-  {
-    id: 3,
-    title: 'Project Three',
-    description: 'Another project showcasing a different aspect of your skill set or interests.',
-    tech: ['TypeScript', 'React', 'Vite'],
-    github: 'https://github.com/JonathanAslam',
-    live: null,
-  },
-  {
-    id: 4,
-    title: 'Project Four',
-    description: 'A project description goes here — talk about the impact, the stack, and your role in building it.',
-    tech: ['Next.js', 'Tailwind', 'Supabase'],
-    github: 'https://github.com/JonathanAslam',
-    live: null,
-  },
-]
 
 export default function ProjectsApp() {
   return (

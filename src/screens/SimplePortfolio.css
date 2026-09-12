@@ -1,0 +1,283 @@
+.simple-portfolio {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #0e0e12;
+  color: #e8e8ec;
+}
+
+.sp-hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 72px 24px 40px;
+  text-align: center;
+}
+
+.sp-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a8a96;
+  margin-bottom: 14px;
+}
+
+.sp-name {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.sp-role {
+  font-size: 14px;
+  color: #a0a0ac;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.sp-bio {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #c4c4cc;
+  max-width: 560px;
+  margin: 0 auto 24px;
+}
+
+.sp-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.sp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #e8e8ec;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #33333c;
+  border-radius: 6px;
+  background: #16161c;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.sp-link:hover {
+  background: #1e1e26;
+  border-color: #46465a;
+}
+
+.sp-launch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0e0e12;
+  background: #7dd3fc;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.sp-launch-btn:hover {
+  background: #a5e2fd;
+}
+
+.sp-launch-btn:active {
+  transform: scale(0.98);
+}
+
+.sp-main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.sp-section-title {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a8a96;
+  border-bottom: 1px solid #26262e;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+
+/* Skills */
+.sp-skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sp-skill-group-title {
+  font-size: 13px;
+  color: #c4c4cc;
+  margin-bottom: 7px;
+}
+
+.sp-skill-tags,
+.sp-project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sp-tag {
+  font-size: 12px;
+  color: #c4c4cc;
+  padding: 3px 10px;
+  border: 1px solid #33333c;
+  border-radius: 999px;
+  background: #16161c;
+}
+
+/* Experience */
+.sp-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.sp-experience-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.sp-experience-role {
+  font-size: 15px;
+  color: #f0f0f4;
+}
+
+.sp-experience-company {
+  font-size: 13px;
+  color: #9494a0;
+}
+
+.sp-experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 12px;
+  color: #8a8a96;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.sp-experience-bullets {
+  list-style: disc;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sp-experience-bullets li {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #c4c4cc;
+}
+
+.sp-experience-bullets strong {
+  color: #e8e8ec;
+}
+
+/* Projects */
+.sp-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.sp-project-card {
+  border: 1px solid #26262e;
+  border-radius: 10px;
+  background: #16161c;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sp-project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.sp-project-title {
+  font-size: 14px;
+  color: #f0f0f4;
+}
+
+.sp-project-card-links {
+  display: flex;
+  gap: 8px;
+}
+
+.sp-project-card-links a {
+  color: #9494a0;
+}
+
+.sp-project-card-links a:hover {
+  color: #e8e8ec;
+}
+
+.sp-project-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #c4c4cc;
+}
+
+.sp-project-desc strong {
+  color: #e8e8ec;
+}
+
+/* Footer */
+.sp-footer {
+  max-width: 860px;
+  margin: 24px auto 0;
+  padding: 32px 24px 64px;
+  border-top: 1px solid #26262e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.sp-footer p {
+  font-size: 13px;
+  color: #9494a0;
+}
+
+@media (max-width: 480px) {
+  .sp-hero {
+    padding: 48px 18px 32px;
+  }
+
+  .sp-name {
+    font-size: 26px;
+  }
+
+  .sp-experience-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+}

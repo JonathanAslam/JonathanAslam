@@ -1,41 +1,5 @@
+import { EXPERIENCES } from '../data/portfolioData'
 import './ExperienceApp.css'
-
-const EXPERIENCES = [
-  {
-    id: 1,
-    title: 'Job Title',
-    company: 'Company Name',
-    period: 'Jan 2024 – Present',
-    location: 'City, State',
-    bullets: [
-      'Key responsibility or achievement one.',
-      'Key responsibility or achievement two.',
-      'Key responsibility or achievement three.',
-    ],
-  },
-  {
-    id: 2,
-    title: 'Job Title',
-    company: 'Company Name',
-    period: 'May 2023 – Aug 2023',
-    location: 'City, State',
-    bullets: [
-      'Key responsibility or achievement one.',
-      'Key responsibility or achievement two.',
-    ],
-  },
-  {
-    id: 3,
-    title: 'Job Title',
-    company: 'Company Name',
-    period: 'Jan 2023 – Apr 2023',
-    location: 'City, State',
-    bullets: [
-      'Key responsibility or achievement one.',
-      'Key responsibility or achievement two.',
-    ],
-  },
-]
 
 export default function ExperienceApp() {
   return (

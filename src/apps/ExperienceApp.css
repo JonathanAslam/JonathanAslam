@@ -100,6 +100,12 @@
   color: var(--text-muted);
 }
 
+/* increase the strength of the bold for <strong> */
+strong {
+  font-weight: 900;
+  color: black;
+}
+
 @media (max-width: 480px) {
   .experience-entry-top {
     flex-direction: column;
